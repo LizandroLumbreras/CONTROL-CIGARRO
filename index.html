@@ -23,9 +23,10 @@
       background: linear-gradient(to right, #00416A, #E4E5E6);
       color: white;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 40px 20px;
+      padding: 40px 20px 80px; /* espacio para footer */
       position: relative;
       overflow: hidden;
     }
@@ -98,7 +99,7 @@
     }
 
     .card {
-      background: rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.05); /* más transparente */
       border-radius: 15px;
       padding: 30px 20px;
       text-decoration: none;
@@ -114,7 +115,7 @@
 
     .card:hover {
       transform: translateY(-5px);
-      background: rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.10); /* más tenue en hover */
     }
 
     .card i {
@@ -126,6 +127,18 @@
     .card span {
       font-size: 18px;
       font-weight: 600;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background: rgba(255,255,255,0.9);
+      color: #00416A;
+      text-align: center;
+      padding: 10px;
+      font-size: 13px;
+      z-index: 5;
     }
   </style>
 </head>
@@ -167,6 +180,10 @@
       </a>
     </div>
   </div>
+
+  <footer>
+    © 2025 Menú Almacén Cigarro · ProSoft25®
+  </footer>
 
 </body>
 </html>
